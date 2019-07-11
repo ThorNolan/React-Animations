@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import './MainView.css';
 
+// import slide components
+import SlideOne from '../../components/SlideOne';
+import SlideTwo from '../../components/SlideTwo';
+import SlideThree from '../../components/SlideThree';
+import SlideFour from '../../components/SlideFour';
+import SlideFive from '../../components/SlideFive';
+
 class MainView extends Component {
 
   render() {
@@ -8,10 +15,11 @@ class MainView extends Component {
     return ( 
       <div class="outer-wrapper">
         <div class="wrapper">
-          <div class="slide one"></div>
-          <div class="slide two"></div>
-          <div class="slide three"></div>
-          <div class="slide four"></div>
+          <SlideOne />
+          <SlideTwo />
+          <SlideThree />
+          <SlideFour />
+          <SlideFive />
         </div>
       </div>
     );
